@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Usuario Perfil</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="perfil.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="perfil.js"></script>
+    </head>
+    <body>
+        <header class="cabe">
+            <nav>
+                <section>
+                    <h1>Perfil do Usuario:</h1>
+                    <h1 id="info"></h1>
+                  </section>
+            </nav>
+        </header>
+        <main class="corpo">
+            <form method="post" action="trocarsenha.php">
+                
+                <label> Digite sua nova senha:</label>
+                <input  name="pass" type="password" class="trocarsenhar">
+                <label> Confirme sua senha:</label>
+                <input name="confpass" type="password" class="trocarsenhar">
+                <input type="submit" value="Trocar senha" class="submitsenha">
+            </form>
+            </main>
+            </body>
+            </html>
