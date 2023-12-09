@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <i class="fa-solid fa-moon"></i>
+  <i class="fa-solid fa-sun"></i>
+  <link rel="stylesheet" href=privado.css type="text/css">
+  <title>Usuario Marter</title>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="privado.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-bar">
+      <section class="logo">
+        <h1 id="title">USUARIO MASTER:</h1>
+        <h1 id="info"></h1>
+        <h2 class="nav-link" id="name_text"></h2>
+        
+      </section>
+      <section class="nav-list">
+        <a href="../../../perfil/perfil.html"   > <button class="perfil"> Perfil </button> </a>
+      </section>
+      <section class="nav-list">
+        <a href="pdf/PDF.php" target="_blank"><Button class="perfil" id="pdf"  type="button">pdf</Button></a>
+      </section>
+
+      <section class="icondark">
+        <input type="checkbox" class="checkbox" id="chk">
+        <label class="label" for="chk">
+
+          <img src="../../../fotos/outros/brilho-do-sol.png" class="img">
+          
+          <img src="../../../fotos/outros/forma-de-meia-lua.png" class="img">
+
+          
+
+          <div class="ball"></div>
+        </label>
+      </section>
+
+      <section class="saida">
+        <Button class="sair" id="sair" value="sairrr" type="button">Sair</Button>
+      </section>
+
+
+    </nav>
+    </section>
+
+
+  </header>
+    
+
+  <main class="corpoCpaas">
+    <!--conteudo da pagina-->
+    <section class="seta_nav">
+      <a class="ancora" href="#top">
+        <img src="../../../fotos/outros/seta-para-cima.png" class="seta_img">
+      </a>
+    </section >
+
+
+
+    <section class="usuarios">
+      <!--tabela usuario-->
+      <h2>pesquisa</h2></br>
+
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>id </th>
+            <th>Nome </th>
+            <th>sobrenome </th>
+            <th>CPF </th>
+            <th>Telefone </th>
+            <th>Email </th>
+            <th>Endereço </th>
+            <th>Data de Nascimento </th>
+            <th>sexo </th>
+            <th>cargo </th>
+          </tr>
+          
+        </thead>
+        <p id="result"></p>
+        <tbody id="pesquisa"></tbody>
+      </table>
+      
+    </section>
+
+    
+
+    </br>
+    <section class="inputs">
+
+      <form class="pesq" id="form_pesq" >
+
+        <label>pesquisa de usuarios</label></br>
+        <input type="text" placeholder="pesquisa de usuarios" class="inpt_pesq" id="pesq" name="pesq">
+        <button id="enviar" type="button" class="nad" >Enviar</button>
+        
+        <select name="opcao" id="selecao">
+          <option></option>
+          <option value="Nome">Nome</option>
+          <option value="cargo">Cargo</option>
+          <option value="ID">id</option>
+          <option value="Ender">Endereço</option>
+          
+        </select>
+
+
+      </form>
+      
+      <form class="pesq" id="form_pesq" >
+        <p id="mens"></p>
+        <label>mudança de cargo</label></br>
+        <input type="number" placeholder="insira o id" class="inpt_cargo" id="cargo" name="pesq"></br>
+        <button id="enviar_cargo" type="button" class="nad" >Enviar</button>
+        
+
+
+
+      </form></br>
+
+  </section>
+
+  <!--tabela banco de dados-->
+    <section class="BD">
+      <h1>banco de dados</h1></br>
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Nome </th>
+            <th>sobrenome </th>
+            <th>CPF </th>
+            <th>Telefone </th>
+            <th>Email </th>
+            <th>Endereço </th>
+            <th>Data de Nascimento </th>
+            <th>sexo </th>
+            <th>cargo </th>
+          </tr>
+          
+        </thead>
+        <tbody id="BD"></tbody>
+      </table>
+    </section>
+
+
+  </main>
+ 
+
+  <footer id="footer00">
+    <section class="div_rodap">
+      <section class="redessocias">
+        <ul>
+          <img src="../../../fotos/footer/whatsapp (1).png" class="iconesredes"> Telefones
+        </ul></br>
+        <ul class="footericons">
+          <li>
+            <img src="../../../fotos/footer/instagram.png" class="iconesredes"> Instagram
+          </li></br>
+          <li>
+            <img src="../../../fotos/footer/whatsapp.png" class="iconesredes"> Whatsapp
+          </li></br>
+        </ul>
+      </section>
+      <section class="emails">
+        <ul class="emailcontatos">
+          <ul class="pessoais" style="list-style: none;">
+            <li none>
+              gbsoutinho141@gmail.com </li>
+            <li none>...</li>
+          </ul>
+          <ul class="emailunisuam" style="list-style: none;">
+            <li none>
+              gabrielsoutinhosilva@souunisuam.com.br</li>
+            <li none>.guilherme.s.machado@souunisuam.com.br</li>
+          </ul>
+        </ul>
+      </section>
+      <ul class="unisuam" style="list-style: none; margin-left: auto;">
+        <li none>
+          @https://www.unisuam.edu.br/
+        </li>
+      </ul>
+    </section>
+  </footer>
+  
+
+  </body>
+
+</html>

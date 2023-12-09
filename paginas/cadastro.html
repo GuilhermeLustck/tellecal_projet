@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cadastro.css" type="text/css">
+  <title>Cadastro</title>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script src="cadastro.js"></script>
+  
+</head>
+
+<body>
+  
+  <form id="form" action="../poss/valid_cadas.php" method="POST">
+    <main class="container">
+      <section class="form-image">
+        <img src="tele.png">
+      </section>
+      <main class="form">
+        <form>
+         <header class="form-header">
+            <section class="title">
+              <h1 class="cadastext">Cadastre-se</h1>
+            </section>
+            <section class="login-button">
+              <a id="sair"><button>Sair</button></a>
+            </section>
+          </header>
+          <section class="erro">
+            <p id="msg_erro"></p>
+          </section>
+          
+          <main class="inputgroup">
+
+            
+            <section class="div_1">
+              <section class="inputbox">
+                <label for="firstname">Primeiro Nome</label></br>
+                <input id="firstname" type="text" class="input_style" name="firstname"
+                  placeholder="Digite seu primeiro nome" required>
+              </section>
+              <section class="inputbox">
+                
+                <label for="email">Email</label></br>
+                <input id="email" type="email" name="email" class="input_style" placeholder="Digite seu Email" required>
+                
+              </section>
+              <section class="inputbox">
+                <label for="password">Senha</label></br>
+                <input id="password" type="password" class="input_style" name="password" placeholder="Digite sua senha"
+                  required>
+              </section>
+              <section class="inputbox">
+                <label for="materno">Nome materno</label></br>
+                <input id="materno" type="text" class="input_style" name="materno"
+                  placeholder="Digite o nome materno" required>
+              </section>
+              <section class="inputbox">
+                <label for="endereco">Endereço completo</label></br>
+                <input id="endereco" type="text" class="input_style" name="endereco" placeholder="Digite seu Endereço"
+                  required>
+              </section>
+              <section class="inputbox">
+                <label for="nascimento">Data de Nascimento</label></br>
+                <input id="nascimento" type="date" class="input_style" name="nascimento"
+                  placeholder="Digite a sua Data de Nascimento" required>
+              </section>
+            </section>
+            <section class="div_2">
+              <section class="inputbox">
+                <label for="sobrenome">Sobrenome</label></br>
+                <input id="sobrenome" type="text" class="input_style" name="sobrenome" placeholder="Digite seu sobrenome"
+                  required>
+              </section>
+              <section class="inputbox">
+                <label for="number">Celular</label></br>
+                <input id="number" type="tel" class="input_style" name="number" placeholder="(xx) xxxx-xxxx" required>
+              </section>
+              <section class="inputbox">
+                <label for="telefone">Telefone</label></br>
+                <input id="telefone" type="tel" class="input_style" name="telefone" placeholder="(xx) xxxx-xxxx">
+              </section>
+              <section class="inputbox">
+                <label for="telefoneFixo">Telefone(fixo)</label></br>
+                <input id="telefoneFixo" type="tel" class="input_style" name="telefoneFixo" placeholder="(xx) xxxx-xxxx">
+              </section>
+              <section class="inputbox">
+                <label for="passwordConfirmar">Confirmar senha</label></br>
+                <input id="passwordConfirmar" type="password" class="input_style" name="passwordConfirmar"
+                  placeholder="Confirme sua senha" required>
+              </section>
+              <section class="inputbox">
+                <label for="CPF">CPF</label></br>
+                <input id="CPF" type="text" class="input_style" name="CPF" placeholder="CPF" required>
+              </section>
+            </section>
+
+            
+          </main>
+   
+ 
+          <section class="continue-button">
+          <input type="submit" value="Continuar" class="continuar">
+          </section>
+        </form>
+      </main>
+    </main>
+  </form>
+</body>
+</html>

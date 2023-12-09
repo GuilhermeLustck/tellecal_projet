@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden ;
+}
+.corpo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 202, 253);
+    overflow: hidden;
+    z-index: 2;
+}
+.cabe{
+    color:white;
+    width: 100%;
+    height: 120px;
+    background-color: #514ba5;
+    padding: 15px;
+    
+    box-shadow: 0px 3px 10px #464646;
+    z-index: 1;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    height:auto;
+    background-color: rgb(219, 233, 26);
+
+}
+.info_usuario{
+
+    position:relative;
+    width: 24%;
+    left: 25%;
+    
+    margin:5%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 10px #222020;
+    
+}
+.img{
+    
+    position: relative;
+    left: 30%;
+    width:25%;
+    height:200px;
+    margin-top:5%;
+    margin-bottom: 5%;
+    box-shadow: 1.5px 5px 5px black;
+    background-color: blueviolet;
+    text-align: center;
+
+    border-radius:10px;
+
+    display: none;
+}
+
+.iconesredes{
+    width: 4%;
+  }
+
+.div_rodap{
+    position:relative;
+    bottom:0;
+    margin:0;
+    width:100%;
+    height:auto;
+    background-color:#565658;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+.redessociais{
+    position: absolute;
+  
+    width:100%;
+    height: auto;
+    border: 3px solid blue;
+}
+  
+.footericons{
+    width: 4%;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    margin:2% ;
+}
+
+.botao{
+    border-radius: 10px;
+    margin-left: 3%;
+    padding: 1%;
+    transition: 0.5s;
+
+}
+.botao:hover{
+    background-color:rgb(253, 3, 3);
+    color: white;
+    transition: 0.5s;
+}
