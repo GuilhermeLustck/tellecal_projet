@@ -93,6 +93,7 @@
                 
     
         }
+
         function validar_entrada02($ID){
             include 'conectPDO.php';
             //array_rand();
@@ -130,6 +131,7 @@
 
             
         }
+//função responsável pela verificação da conta do usuário 
         function validar_entrada($Email,$Senha){
             include 'conectPDO.php';
             //array_rand();
