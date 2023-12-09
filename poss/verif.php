@@ -1,7 +1,7 @@
       <?PHP
 
         
-        
+  //função que lista o Banco de dados
         function lista_BD(){
             
             include 'conectPDO.php';
@@ -14,6 +14,7 @@
             echo json_encode([$result]); 
 
         }
+
         function PDF(){
             
             include 'conectPDO.php';
