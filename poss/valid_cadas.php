@@ -1,6 +1,8 @@
 <?php
     include 'verif.php';
 
+//recebe os dados do html e insere na variavel
+
      $Nome       =  $_POST["firstname"];
      $sobrenome  =  $_POST["sobrenome"];
      $Email      =  $_POST["email"];
@@ -16,6 +18,7 @@
     
 
 
+//joga as variáveis na função para inserir no banco de dados
 
     inserir($Nome,$sobrenome,$Email,$Celular,$Telefone,$Tel_fixo,$Senha,$Nome_materno,$Ender,$CPF,$DTnasc);
 
