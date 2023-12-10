@@ -93,7 +93,7 @@
                 
     
         }
-
+//função responsavel pela entrada do usuario ao sistema
         function validar_entrada02($ID){
             include 'conectPDO.php';
             //array_rand();
@@ -131,7 +131,7 @@
 
             
         }
-//função responsável pela verificação da conta do usuário 
+//função responsável pela primeira verificação da conta do usuário 
         function validar_entrada($Email,$Senha){
             include 'conectPDO.php';
             //array_rand();
@@ -161,6 +161,7 @@
             }
             
         }
+//função pega a identidade do usiario na sessão
         function indet(){
             header('content-Type: application/json');
             session_start();
@@ -178,7 +179,7 @@
 
 
         }
-        
+        //faz varioas pesquisa no banco de dados
         function pesquisa($pesquisa,$pesquisa2){
             include 'conectPDO.php';
 
@@ -218,6 +219,8 @@
             }
 
         }
+      //insere um novo usuario no banco de dado e valida se o uruario ja existe no banco dados
+
         function inserir($Nome,$sobrenome,$Email,$Celular,$Telefone,$Tel_fixo,$Senha,$Nome_materno,$Ender,$CPF,$DTnasc){
             include 'conectPDO.php';
             
@@ -268,6 +271,7 @@
 
         }
 
+      //responsavel pelo preenchimento da pagina do perfil
         function perfil($id){
 
             include 'conectPDO.php';
@@ -288,7 +292,7 @@
             }
 
         }
-
+      //responsavel pela remoção do usuario do banco de dados
         function delite($id){
             include 'conectPDO.php';
             $SQLI=$CONECT->prepare("DELETE FROM principal WHERE ID=:id");
@@ -302,6 +306,7 @@
             }
 
         }
+      //responsavel pela exclusão da sessão que e encarregado pelo login do usuario
         function sair(){
             
             session_start();
@@ -321,6 +326,7 @@
 
 
         }
+      //função responsavel pela alteração de algum dado no banco de daos
         function update($opsao,$valor,$id){
 
             include 'conectPDO.php';
