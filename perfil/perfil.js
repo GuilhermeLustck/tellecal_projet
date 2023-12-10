@@ -1,8 +1,8 @@
-
+//variavel responsavel de armazenar o cargo do usuario
 var dire=''
 
 $(document).ready(function(){
-
+  //consulta ao servidor onde o retorno deve ser em formato json
   $.ajax({
     url:"http://localhost/Telecallprojet/paginas/conteudo/sessao.php",
     datatype:'json'
@@ -24,7 +24,7 @@ $(document).ready(function(){
 $(document).ready(()=>{
   $("#voltar").click(()=>{
 
-    
+    //verifica aonde o usuario ira retornar dependendo do cargo do mesmo
     if(dire=='master'){
 
       window.location.assign('../paginas/conteudo/privado/privado.html')
@@ -42,28 +42,24 @@ $(document).ready(()=>{
 
 
 $(document).ready(function(){
-
-    
-    //document.write("foi")
-   
-
+    //consulta o servidor pelo perfil do usuario
     $.ajax({
 
         url: "http://localhost/Telecallprojet/perfil/perfil.php",
         dataType:'json'
 
     }).done(function(result){
-
+        //verificando se a retorno do servidor
         if(result){
-
+        
           console.log(result);
-          //document.write(result)
+          
 
 
 
 
 
-
+          //realocação dos dados do usuario
           $("#Nome").html(result.Nome);
           $("#sobrenome").html(result.Sobrenome);
           $("#Email").html(result.Email);
@@ -86,7 +82,7 @@ $(document).ready(function(){
     })
 
 })
-
+//redirecionamento para troca de senha
 $(document).ready(function(){
   $("#Senha_button").click(()=>{
     window.location.assign("m_senha/mudarsenha.html");
