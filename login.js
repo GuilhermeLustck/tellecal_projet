@@ -7,7 +7,7 @@ $(document).ready(function(){
 
       let senha = $("#senha").val();
       let email = $("#login").val();
-      
+      //leva os dados para o servidor para averificação de login
       $.ajax({
         url:'http://localhost/Telecallprojet/poss/valid.php',
         data:{ nome_login:email , senha_login:senha },
@@ -24,7 +24,7 @@ $(document).ready(function(){
 
         }else if(res=="off"){
           
-          document.write("<h1>acesso negado</h1>")
+          alert("<h1>acesso negado</h1>")
           window.location.assign("index.html")
           
         }
@@ -34,12 +34,6 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-  $.ajax({
-    url:'paginas/conteudo/sessao.php',
-    datatype:'json'
-  })
-})
 
 
 
