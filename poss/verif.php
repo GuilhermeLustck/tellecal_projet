@@ -161,7 +161,7 @@
             }
             
         }
-//função pega a identidade do usiario na sessão
+//função pega a identidade do usuario na sessão
         function indet(){
             header('content-Type: application/json');
             session_start();
