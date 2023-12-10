@@ -5,7 +5,7 @@ use Dompdf\Dompdf;
     include '../../../../poss/conectPDO.php';
 
 
-
+//variavel responsavel pelo armazenamento de todo o conteudo do PDF
     $HTML="<html>
     <head>
         <style>
@@ -38,10 +38,10 @@ use Dompdf\Dompdf;
     $SQLI=$CONECT->prepare("SELECT * FROM principal");
     $SQLI->execute();
     $result=$SQLI->fetchALL(PDO::FETCH_ASSOC);
-
+//loop responsavel pela listagem de todos os usuario do banco de dados
     foreach ($result as $row){
 
-
+        //colocando na variavel os dados de cada usuario
         $HTML.=("<tr>");
 
         $HTML.="<td>".$row["ID"]."</td>";
@@ -66,17 +66,17 @@ use Dompdf\Dompdf;
         require_once '../../../../vendor/autoload.php';
 
         
-        
+        //iniciando a extensão
         $dompdf = new Dompdf();
 
         $dompdf->loadHtml($HTML);
-
+        //define o tipo de folha e a forma da mesma
         $dompdf->setPaper('A4', 'landscape');
-
+        //deração do pdf
         $dompdf->render();
-
+        //mudando a tipagen do documento para pdf
         header('content-Type:application/pdf');
-
+        //dizendo para abrir o pdf não baixar o mesmo
         echo $dompdf->output();
  
 
