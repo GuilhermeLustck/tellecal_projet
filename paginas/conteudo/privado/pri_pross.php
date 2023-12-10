@@ -1,7 +1,7 @@
 <?php
-//arquivo pro_pross.php
+//arquivo responsavel pela pesquisa de usuarios
     include '../../../poss/verif.php';
-
+    //muda o tipo de arquivo para json
     header('content-Type: application/json');
 
     $pesquisa=$_GET['pesquisaBD'];
