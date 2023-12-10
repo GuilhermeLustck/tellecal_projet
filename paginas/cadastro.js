@@ -5,7 +5,7 @@ $(document).ready(function () {
 })
   $("#form").submit(function () {
     
-
+    //recolhimento dos dados do cadastro
     let name =         $("#firstname").val();
     let email =        $("#email").val();
     let senha =        $("#password").val();
@@ -19,23 +19,26 @@ $(document).ready(function () {
     let comfirmarSenha=$("#passwordConfirmar").val();
     let CPF =          $("#CPF").val();
     
-    
+    //validação do nome
     if (name.length < 5) {
       console.log("O nome precisa ter no mínimo 5 caracteres");
       $("#msg_erro").html("O nome precisa ter no mínimo 5 caracteres")
       return false;
     }
+    //validação do nome materdo do usuario
     if (nameMaterno.length < 5) {
       console.log("O nome materno precisa ter no mínimo 5 caracteres");
       $("#msg_erro").html("O nome materno precisa ter no mínimo 5 caracteres")
       
       return false;
     }
+    //validação do nome da senha
     if (senha.length < 6) {
       console.log("A senha precisa ter no mínimo 6 caracteres");
       $("#msg_erro").html("A senha precisa ter no mínimo 6 caracteres")
       return false;
     }
+    //validação se a senha são a mesma
     if (senha !== comfirmarSenha) {
       console.log("A senha e a confirmação de senha não correspondem");
       $("#msg_erro").html("A senha e a confirmação de senha não correspondem")
